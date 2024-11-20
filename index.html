@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Islamic Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Islamic Inspirations</h1>
+        <button id="theme-toggle">Switch Theme</button>
+        <select id="language-selector">
+            <option value="en" selected>English</option>
+            <option value="bn">বাংলা</option>
+            <option value="ar">العربية</option>
+        </select>
+    </header>
+    <main>
+        <section id="daily-inspiration">
+            <h2 data-key="daily_inspiration">Daily Inspiration</h2>
+            <button id="get-inspiration" data-key="get_inspiration">Get Today's Inspiration</button>
+            <div id="inspiration-content"></div>
+        </section>
+
+        <section id="prayer-times">
+            <h2 data-key="prayer_times">Prayer Times</h2>
+            <div id="prayer-time-info">
+                <p data-key="next_prayer">Next Prayer:</p>
+                <span id="next-prayer">Loading...</span>
+                <p data-key="time_remaining">Time Remaining:</p>
+                <span id="time-remaining">00:00:00</span>
+                <button id="play-adhan" data-key="play_adhan">Play Adhan</button>
+            </div>
+            <div id="qibla-compass">
+                <h3 data-key="qibla_direction">Qibla Direction</h3>
+                <canvas id="compass"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p data-key="footer">© 2024 Islamic Inspirations</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
